@@ -1,0 +1,33 @@
+<br>
+<div *ngIf="compareData.length>=2" class="row">
+    <table class="table">
+        <thead class="thread-default">
+            <tr>
+                <th></th>
+                <th *ngFor="let product of compareData" class="features">{{product.name|titlecase}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="prices">
+                <th class="baslik">Price</th>
+                <td *ngFor="let product of compareData">{{product.price |currency:"USD"}}</td>
+            </tr>
+            <tr>
+                <th class="baslik">Colors</th>
+                <td *ngFor="let product of compareData">
+                    <div class="d-flex justify-content-center">
+                        <div class="colors">
+                            <div *ngFor="let col of product.span" class="{{col}}"><span></span></div>
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="condition">
+                <th class="baslik">Condition</th>
+                <td *ngFor="let product of compareData" class="{{product.condinition}}">{{product.condinition}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,123 @@
+.card {
+    margin-right: 30px;
+    margin-top: 20px;
+    width: 100px;
+    height: 480px;
+}
+
+body {
+    background: gray;
+    font-family: "Open Sans", sans-serif;
+    background-color: #F0EFEE;
+}
+
+.name {
+    font-size: 22px;
+    color: #393c45;
+}
+
+p {
+    font-size: 16px;
+    color: #b1b1b3;
+    padding: 2px 0 20px 0;
+}
+
+.price {
+    float: right;
+    color: #48cfad;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.view_details {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.005s linear;
+    position: absolute;
+    top: 112px;
+    left: 50%;
+    margin-top: 65px;
+    margin-left: -85px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+    width: 172px;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.view_details:hover {
+    background: #fff;
+    color: #48cfad;
+    cursor: pointer;
+}
+
+.view_details {
+    opacity: 1;
+    width: 152px;
+    font-size: 15px;
+    margin-left: -75px;
+    top: 115px;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.product-card:hover .card-img-top {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.card:hover .image {
+    background-color: #48cfad;
+    cursor: pointer;
+}
+
+.card:hover .view_details {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.card:hover {
+    -webkit-transform: scale(0.4);
+    transform: scale(1);
+}
+
+.view_details:active .image {
+    background-color: #48cfad;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.image_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #48daa1;
+    opacity: 0;
+}
+
+.title {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 0px;
+}
+
+.price {
+    color: #00C853;
+}

@@ -1,0 +1,25 @@
+<br>
+<div class="row">
+    <div class="col-10">
+        <div class="title">{{title|titlecase}}</div>
+    </div>
+    <div *ngFor="let product of products" class="card" style="width: 18rem;">
+        <div class="product-card">
+            <div class="product-front">
+                <div class="image">
+                    <img src="{{product.imageUrl}}" class="card-img-top" alt="card image cap"></div>
+                <div class="image_overlay"></div>
+                <div class="view_details" (click)="compare(product)">{{product.compare}}</div>
+
+                <div class="stats">
+                    <div class="card-body">
+                        <span class="name">{{product.name |titlecase}} </span>
+                        <span class="price">{{product.price |currency:"USD"}}</span>
+                        <p>{{product.feature|titlecase}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-compare [compareData]="product_compare"></app-compare>

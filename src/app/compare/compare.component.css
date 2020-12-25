@@ -1,0 +1,89 @@
+body {
+    display: flex;
+}
+
+.table {
+    table-layout: fixed;
+    width: 76.7%;
+    border: 2px solid #FAFAFA;
+    border-radius: 8px;
+}
+
+.baslik {
+    font-size: 21px;
+    padding: 2px 0 20px 0;
+    background-color: #FAFAFA;
+    padding: 10px 8px 10px 30px;
+    padding-top: 20px;
+    font-weight: normal;
+    color: #393c45;
+}
+
+td,
+th,
+tr {
+    table-layout: fixed;
+    height: 70px;
+    width: 120px;
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: normal;
+    color: #393c45;
+}
+
+td {
+    text-align: center;
+}
+
+.features {
+    font-size: 21px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+    color: #393c45;
+}
+
+div.colors div {
+    margin-top: 15px;
+    width: 0px;
+    float: left;
+    margin-left: 25px;
+}
+
+div.colors div span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 70%;
+    margin-left: 0px;
+}
+
+.c-blue span {
+    background: #1598d4;
+}
+
+.c-red span {
+    background: #FF6347;
+}
+
+.c-green span {
+    background: #48d08f;
+}
+
+.condition td {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.Fresh {
+    background-color: #48d08f;
+}
+
+.Frozen {
+    background-color: #FF6347;
+}
+
+.colors {
+    padding-right: 45px;
+}
